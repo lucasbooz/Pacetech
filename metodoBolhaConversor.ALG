@@ -1,11 +1,11 @@
 algoritmo "conversorVetorTemperatura"
 
-// Introdução a Programação
+// IntroduÃ§Ã£o a ProgramaÃ§Ã£o
 //
-// Função : Realizar a conversão e ordenação de temperatura utilizando método bolha
+// FunÃ§Ã£o : Realizar a conversÃ£o e ordenaÃ§Ã£o de temperatura utilizando mÃ©todo bolha
 // Autor : Lucas Rafael Booz
 // Data : 09/03/2022
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
 
    opcaoMenu,proc :caracter
@@ -22,15 +22,15 @@ inicio
    escreval("2 - Fahrenheit -> celsius")
    escreval("3 - Ajuda")
    escreval("4 - Sair")
-   escreva("Por favor, escolha uma das opções acima: ")
+   escreva("Por favor, escolha uma das opÃ§Ãµes acima: ")
    leia(opcaoMenu)
    limpatela
 fimprocedimento
 
 procedimento telaAjuda()
 inicio
-   escreval("Fórmula de celsius para fahrenheit: F = (C x 1,8) + 32")
-   escreval("Fórmula de fahrenheit para celsius: C = (C - 32) / 1.8")
+   escreval("FÃ³rmula de celsius para fahrenheit: F = (C x 1,8) + 32")
+   escreval("FÃ³rmula de fahrenheit para celsius: C = (F - 32) / 1.8")
 fimprocedimento
 
 procedimento armazenaVetor()
@@ -72,11 +72,11 @@ inicio
 
    se (opcaoMenu = "1") entao
       para i de 1 ate 4 faca
-         escreval("Temperatura", temperatura[i], "°C, registrada às", hora[i], "h corresponde a ", ((temperatura[i]*1.8)+32):2:2,"°F.")
+         escreval("Temperatura", temperatura[i], "Â°C, registrada Ã s", hora[i], "h corresponde a ", ((temperatura[i]*1.8)+32):2:2,"Â°F.")
       fimpara
    senao
       para i de 1 ate 4 faca
-         escreval("Temperatura", temperatura[i], "°F, registrada às", hora[i], "h corresponde a ", ((temperatura[i]-32)/1.8):2:2,"°C.")
+         escreval("Temperatura", temperatura[i], "Â°F, registrada Ã s", hora[i], "h corresponde a ", ((temperatura[i]-32)/1.8):2:2,"Â°C.")
       fimpara
    fimse
 fimprocedimento
@@ -111,7 +111,7 @@ inicio
 
          outrocaso
             escreval()
-            escreval("Opção inválida!")
+            escreval("OpÃ§Ã£o invÃ¡lida!")
          fimescolha
 
       ate opcaoMenu = "4"
